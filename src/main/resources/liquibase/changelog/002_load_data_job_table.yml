@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002_load_data_job_table
+      author: Heybat Movlamov
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: liquibase/data/job.csv
+            separator: ;
+            tableName: job_entity

@@ -1,0 +1,2 @@
+job_title;company_name;location;job_type;salary_min;salary_max;job_description;requirements;experience_level;education_level;industry;posted_date;application_deadline;how_to_apply;company_logo;benefits;tags;source
+Backend Developer;TechCorp;Baku;FULL_TIME;1500;3000;Develop REST APIs;Java, Spring Boot, PostgreSQL;MID;Bachelor;IT;2025-06-05;2025-06-30;Send CV to hr@techcorp.com;https://techcorp.com/logo.png;Health insurance, Gym membership;Java, Spring, Backend;LinkedIn

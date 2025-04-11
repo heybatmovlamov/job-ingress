@@ -1,0 +1,87 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_job_entity_table
+      author: Movlamov Heybat
+      changes:
+        - createTable:
+            tableName: job_entity
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  defaultValueComputed: gen_random_uuid()
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: job_title
+                  type: varchar(255)
+
+              - column:
+                  name: company_name
+                  type: varchar(255)
+
+              - column:
+                  name: location
+                  type: varchar(255)
+
+              - column:
+                  name: job_type
+                  type: varchar(50)
+
+              - column:
+                  name: salary_min
+                  type: int8
+
+              - column:
+                  name: salary_max
+                  type: int8
+
+              - column:
+                  name: job_description
+                  type: varchar(50)
+
+              - column:
+                  name: requirements
+                  type: varchar(50)
+
+              - column:
+                  name: experience_level
+                  type: varchar(50)
+
+              - column:
+                  name: education_level
+                  type: varchar(100)
+
+              - column:
+                  name: industry
+                  type: varchar(50)
+
+              - column:
+                  name: posted_date
+                  type: date
+                  defaultValueComputed: CURRENT_DATE
+
+              - column:
+                  name: application_deadline
+                  type: date
+
+              - column:
+                  name: how_to_apply
+                  type: varchar(255)
+
+              - column:
+                  name: company_logo
+                  type: varchar(255)
+
+              - column:
+                  name: benefits
+                  type: varchar(255)
+
+              - column:
+                  name: tags
+                  type: varchar(255)
+
+              - column:
+                  name: source
+                  type: varchar(255)

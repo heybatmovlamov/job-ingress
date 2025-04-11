@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  
+spring:
+  main:
+    banner-mode: log
+  datasource:
+    url: jdbc:postgresql://localhost:5432/job_ingress
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 5
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: false
+
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yaml
